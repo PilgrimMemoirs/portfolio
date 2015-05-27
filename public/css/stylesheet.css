@@ -183,7 +183,7 @@ section.module {
   FOOTER
 ============================================================ */
 footer {
-	width: 100%;
+
 	height: 45px;
 	bottom:0;
 	left:0;
@@ -216,9 +216,9 @@ footer ul li {
 /*Adds background when scrolling down*/
 footer.scrolling {
   background: #00b5bf;
-  border-right: 15px solid white;
-  border-left: 15px solid white;
-  width: 100  %;
+  border-right: 24px solid white;
+  border-left: 24px solid white;
+  width: 100%;
 }
 
 

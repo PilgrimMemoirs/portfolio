@@ -9,11 +9,9 @@ resizeDiv();
 function resizeDiv() {
 wh = $(window).height();
 ww = $(window).width();
-rh = $("#resume").height();
-rh += 30;
-ww -= 30;
+wh += 30;
+ww -= 48;
 
 $("#parallax-1").css({"height": wh + "px"});
-$("#parallax-2").css({"height": rh + "px"});
 $("footer").css({"width": ww + "px"});
 }
