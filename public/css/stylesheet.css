@@ -74,10 +74,6 @@ nav ul img {
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
-nav ul li:hover {
-  font-size: 1.2em;
-  transition-timing-function: ease-out;
-}
 
 nav ul img:hover {
     opacity: 1.0;
@@ -86,8 +82,13 @@ nav ul img:hover {
 }
 
 nav.scrolling {
+  height: 80px;
+}
+
+nav ul.scrolling {
   background-color: #fff;
-  height: 70px;
+  border-radius: 10px;
+  height: 55px;
 }
 
 nav img.scrolling {
@@ -158,13 +159,13 @@ section.module.parallax {
 }
 
 #parallax-1{
-  background-image: url("../img/jamie.jpg");
+  background-image: url("imgs/jamie.jpg");
   background-position: bottom;
 
 }
 
 #parallax-2 {
-  background-image: url("../img/jamie.jpg");
+  background-image: url("public/imgs/jamie.jpg");
   background-position: bottom;
   height: 820px;
 }
@@ -187,6 +188,7 @@ footer {
 	bottom:0;
 	left:0;
 	position: fixed;
+  margin: 0 auto;
 }
 
 
@@ -216,6 +218,7 @@ footer.scrolling {
   background: #00b5bf;
   border-right: 15px solid white;
   border-left: 15px solid white;
+  width: 100  %;
 }
 
 
