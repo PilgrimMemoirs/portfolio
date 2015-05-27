@@ -36,6 +36,13 @@ p, ul li {
   color: #102342;
 }
 
+p {
+  font-family: 'Kameron', serif;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5em;
+}
+
 /* ============================================================
   	NAVIGATION
 ============================================================ */
