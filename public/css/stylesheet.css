@@ -159,13 +159,13 @@ section.module.parallax {
 }
 
 #parallax-1{
-  background-image: url("imgs/jamie.jpg");
+  background-image: url("jamie.jpg");
   background-position: bottom;
 
 }
 
 #parallax-2 {
-  background-image: url("public/imgs/jamie.jpg");
+  background-image: url("jamie.jpg");
   background-position: bottom;
   height: 820px;
 }
