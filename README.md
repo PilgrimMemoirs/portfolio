@@ -1,6 +1,6 @@
 # Portfolio Site
 
-## My Personal Portfolio site
+## My Personal Portfolio
 :doughnut::doughnut::doughnut::doughnut::doughnut::doughnut::doughnut::doughnut::doughnut::doughnut::doughnut:
 ##### www.illbringthedonuts.com
 
