@@ -167,7 +167,7 @@ section.module.parallax {
 /*  height: 450px;*/
   background-position: 50% 50%;
   background-attachment: fixed;
-/*  background-size: cover;*/
+  background-size: cover;
 }
 
 #parallax-1{
