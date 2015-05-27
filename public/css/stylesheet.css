@@ -164,10 +164,10 @@ section.module.content {
   padding: 40px 0;
 }
 section.module.parallax {
-  height: 450px;
+/*  height: 450px;*/
   background-position: 50% 50%;
   background-attachment: fixed;
-  background-size: cover;
+/*  background-size: cover;*/
 }
 
 #parallax-1{
@@ -245,9 +245,11 @@ input[type="submit"] {
   font-size: 1.25em;
   margin-top: 20px;
   }
+
 /* ============================================================
   FOOTER
 ============================================================ */
+
 footer {
 
 	height: 45px;
@@ -287,6 +289,9 @@ footer.scrolling {
   width: 100%;
 }
 
+/* ============================================================
+  (VERY BASIC) RESPONSIVE
+============================================================ */
 
 @media (max-width: 600px) {
 	footer ul {
@@ -325,10 +330,9 @@ footer.scrolling {
   }
 }
 
-@media only-screen and (max-device-width : 414px) {
+@media screen and (max-device-width : 414px) {
   #parallax-1{
   background-position: bottom;
   background-size: cover;
-}
 }
 
