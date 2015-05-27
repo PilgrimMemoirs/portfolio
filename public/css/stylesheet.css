@@ -30,6 +30,7 @@ figure img{
 
 h1, h2, h3, h4 {
   color: #102342;
+  text-align: center;
 }
 
 p, ul li {
@@ -165,7 +166,6 @@ section.module.content {
 section.module.parallax {
   height: 450px;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -173,13 +173,13 @@ section.module.parallax {
 #parallax-1{
   background-image: url("jamie.jpg");
   background-position: bottom;
-
 }
 
 #parallax-2 {
-  background-image: url("jamie.jpg");
+  background-image: url("paper.png");
   background-position: bottom;
-  height: 820px;
+  background-repeat: repeat;
+  height: 300px;
 }
 
 section.module {
@@ -189,7 +189,26 @@ section.module {
   background-color: #ececec;
 }
 
+/* ============================================================
+    Project List
+============================================================ */
+#projects {
+  width: 50%;
+  display: table;
+  list-style-type: none;
+  margin: 0 auto;
+}
 
+#projects li{
+  display: table-cell;
+  text-align: center;
+  padding-right: 20px;
+  font-size: 1.5em;
+}
+
+#projects li a {
+  display: block;
+}
 
 /* ============================================================
   FOOTER
