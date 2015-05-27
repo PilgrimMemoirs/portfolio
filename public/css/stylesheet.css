@@ -28,8 +28,12 @@ figure img{
        color: #fff;
 }
 
-p, h1, h2, h3, h4, ul li {
-  color: #808080;
+h1, h2, h3, h4 {
+  color: #102342;
+}
+
+p, ul li {
+  color: #102342;
 }
 
 /* ============================================================
@@ -112,6 +116,7 @@ a:visited {
 a:hover {
     text-decoration: none;
     color: #FF6666;
+          
 }
 
 
@@ -215,7 +220,7 @@ footer ul li {
 
 /*Adds background when scrolling down*/
 footer.scrolling {
-  background: #00b5bf;
+  background: #102342;
   border-right: 24px solid white;
   border-left: 24px solid white;
   width: 100%;
