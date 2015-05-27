@@ -13,6 +13,8 @@ gem 'rspec'
 gem 'rake'
 gem 'thin'
 
+gem 'pony'
+
 
 group :development do
  gem 'sqlite3'

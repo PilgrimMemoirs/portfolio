@@ -6,10 +6,10 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<script src="../public/js/scrollingnav.js"></script>
-<script src="../public/js/windowheight.js"></script>
+<script src="js/scrollingnav.js"></script>
+<script src="js/windowheight.js"></script>
 
-<link rel="shortcut icon" type="image/png" href="img/coralfavicon.png"/>
+<link rel="shortcut icon" type="image/png" href="imgs/coralfavicon.png"/>
 
 <title>Jamie Pilgrim | I'll Bring the Donuts </title>
 <!-- [if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script><![end if]-->
@@ -18,18 +18,22 @@
 
 <body> 
 <header> 
-  <nav>
-    <a href="#"><img id="logo" src="../public/imgs/simplelogo.png" alt="Donut Logo" height="75" width="75"></a>
-    <ul>
-      <li><a href="#about"> About </a></li>
-      <li><a href="#projects"> Projects </a></li>
-      <li><a href="#"><img src="img/simplelogo.png" alt="Donut Logo" height="75" width="75"></a><li>
-      <li><a href="#experience"> Experience </a></li>
-      <li><a href="#contact"> Contact </a></li>
-    </ul>
-  </nav>
+  <%  if !@message %>
+    <nav>
+      <a href="#"><img id="logo" src="imgs/simplelogo.png" alt="Donut Logo" height="75" width="75"></a>
+      <ul>
+        <li><a href="#about"> About </a></li>
+        <li><a href="#projects"> Projects </a></li>
+        <li><a href="#"><img src="imgs/simplelogo.png" alt="Donut Logo" height="75" width="75"></a><li>
+        <li><a href="#experience"> Experience </a></li>
+        <li><a href="#contact"> Contact </a></li>
+      </ul>
+    </nav>
+  <%end%>
   <section class="module parallax" id="parallax-1">
-    <div class="container"></div>
+    <div class="container">
+      <h2><%=  @message if @message %></h2>
+    </div>
   </section>
 </header>
 <a name ="about">
@@ -52,16 +56,17 @@
 <section class="module content">
   <div class="container">
     <h2> Projects </h2>
-    <p class="center"> Coming Soon </p>
+
+    <p> These are sites that were built during a hackathon or my time studying development at Dev Bootcamp. </p>
 
     <!-- Show image, then on hover, blur background and show a title and short desc of project. Will be clickable to a popup w/ more info that will display links, who collaborated, the projects intentions and technologies -->
-    <ul>
-      <li id="raft"><a href=""><img src="" alt=""></a></li>
-      <li id="humblehearts"><a href=""><img src="" alt=""></a></li>
-      <li id="fetch"><a href=""><img src="" alt=""></a></li>
-      <li id="games"><a href=""><img src="" alt=""></a></li>
+    <ul id="projects">
+      <li id="humblehearts"><a href="http://humblehearts.herokuapp.com" target="_blank">Humble Hearts<!-- <img src="" alt=""> --></a></li>
+      <li id="raft" ><a href="http://raft.herokuapp.com" target="_blank">Raft<!-- <img src="" alt=""> --></a></li>
+      <li id="fetch"><a href="https://github.com/PilgrimMemoirs/DBC_Metaoverflow" target="_blank">Metaoverflow<!-- <img src="" alt=""> --></a></li>
+<!--       <li id="games"><a href=""><img src="" alt=""></a></li>
       <li id="blog"><a href=""><img src="" alt=""></a></li>
-      <li id="metaoverflow"><a href=""><img src="" alt=""></a></li>
+      <li id="metaoverflow"><a href=""><img src="" alt=""></a></li> -->
     </ul>
   <a name ="resume">
   </div>
@@ -70,20 +75,23 @@
 
 <section class="module parallax" id="parallax-2">
   <div class="container">
+  <h2> Experience </h2>
 
-    <figure id="resume"><a href="img/JamiePilgrimResume2015.pdf" target="_blank"><img src="img/JamiePilgrimResume2015.jpg"></a></figure>
-    
+  <h4> <a href="imgs/JamiePilgrimResume2015.pdf" target="_blank">Download Resume</a> </h4>
   </div>
 </section>
 
 <a name ="contact">
 <section class="module content">
   <div class="container">
-  <h2> Contact </h2>
+    <h2> Contact </h2>
 
-  <p class="center"> hello@jamiepilgrim.com </p>
-
-
+    <form action='/contact' method="post">
+      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="mail" placeholder="Email">
+      <textarea name="body" placeholder="Your Message Here"></textarea>
+      <input type="submit" value="Send">
+    </form>
   </div>
 </section>
 
@@ -91,19 +99,19 @@
       <h4> &copy; 2015 Jamie Pilgrim </h4>
       <ul>
         <li><a href="http://www.twitter.com/pilgrimmemoirs" target="_blank">
-          <img src="img/twitter.png"></a>
+          <img src="imgs/twitter.png"></a>
         </li>
         <li><a href="http://www.github.com/pilgrimmemoirs" target="_blank">
-          <img src="img/github-2.png"></a>
+          <img src="imgs/github-2.png"></a>
         </li>
         <li><a href="https://dribbble.com/bringingdonuts" target="_blank">
-          <img src="img/dribbble.png"></a>
+          <img src="imgs/dribbble.png"></a>
         </li>
         <li><a href="http://www.linkedin.com/in/jamiepilgrim" target="_blank">
-          <img src="img/linkedin.png"></a>
+          <img src="imgs/linkedin.png"></a>
         </li>
         <li><a href="mailto:hello@jamiepilgrim.com" target="_blank">
-          <img src="img/email.png"></a>
+          <img src="imgs/email.png"></a>
         </li>
       </ul>
     </footer> 
