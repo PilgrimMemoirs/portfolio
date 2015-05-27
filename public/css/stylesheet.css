@@ -211,6 +211,38 @@ section.module {
 }
 
 /* ============================================================
+    Contact Form
+============================================================ */
+
+form {
+  width: 350px;
+  margin: auto;
+}
+
+textarea, input:nth-child(1), input:nth-child(2) {
+    width: 350px;
+    padding: 20px 0px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #102342;
+    outline: none;
+    color: #6D7781;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+  background: #102342;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.25em;
+  margin-top: 20px;
+  }
+/* ============================================================
   FOOTER
 ============================================================ */
 footer {
