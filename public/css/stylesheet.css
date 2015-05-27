@@ -325,3 +325,10 @@ footer.scrolling {
   }
 }
 
+@media only-screen and (max-device-width : 414px) {
+  #parallax-1{
+  background-position: bottom;
+  background-size: cover;
+}
+}
+
