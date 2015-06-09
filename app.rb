@@ -29,8 +29,8 @@ post '/contact' do
         :address              => 'smtp.gmail.com', 
         :port                 => '465', 
         :enable_starttls_auto => true, 
-        :user_name            => 'jamieleepilgrim', 
-        :password             => 'Ayemipape90!', 
+        :user_name            => '', 
+        :password             => '', 
         :authentication       => :plain, 
         :domain               => 'localhost.localdomain'
       })
