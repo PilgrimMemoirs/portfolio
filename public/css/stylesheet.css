@@ -332,7 +332,8 @@ footer.scrolling {
 
 @media screen and (max-device-width : 414px) {
   #parallax-1{
+  background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover;
+
 }
 
